@@ -5,6 +5,7 @@
     --text-dark: #333;
     --text-light: #fff;
     --bg-grey: #c9c7c7;
+    --bg-light-grey: #f9f9f9;
 }
 
 ::selection {
