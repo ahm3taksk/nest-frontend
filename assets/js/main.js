@@ -9,12 +9,10 @@ tailwind.config = {
   }
 
 function activateSidePopup() {
-    var popup = document.getElementsByClassName("sidePopupContent")[0];
-    if (popup.classList.contains("active")) {
-        popup.classList.remove("active");
-        popup.classList.remove("row");
+  var popupContent = document.getElementsByClassName("sidePopupContent")[0];
+    if (popupContent.classList.contains("active")) {
+        popupContent.classList.remove("active");
     } else {
-        popup.classList.add("active");
-        popup.classList.add("row");
-    }
+        popupContent.classList.add("active");
+  }
 }

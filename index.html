@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Nest</title>
@@ -89,43 +90,33 @@
         <div class="sidePopup">
             <div class="sidePopupToggler" onclick="activateSidePopup()">
                 <span class="sidePopupTogglerContent">
-                    Daha fazla
+                    Quick menu
                 </span>
             </div>
             <div class="sidePopupContent">
-                <div class="col-12">
+                <div class="sidePopupContentHeader">
+                    <h3 class="sidePopupTitle">Quick menu</h3>
+                    <i onclick="activateSidePopup()" class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <div class="sidePopupWrapper">
                     <div class="sidePopupItem">
                         <i class="fa-regular fa-user"></i>
                         <span class="sidePopupItemText">User</span>
                     </div>
-                </div>
-                <div class="col-12">
                     <div class="sidePopupItem">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="sidePopupItemText">Cart</span>
+                        <span class="sidePopupItemText3">Cart</span>
                     </div>
-                </div>
-                <div class="col-12">
                     <div class="sidePopupItem">
                         <i class="fa-regular fa-heart"></i>
-                        <span class="sidePopupItemText">Wishlist</span>
+                        <span class="sidePopupItemText3">Wishlist</span>
                     </div>
-                </div>
-                <div class="col-12">
                     <div class="sidePopupItem">
                         <i class="fa-solid fa-code-compare"></i>
                         <span class="sidePopupItemText">Compare</span>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="sidePopupItem">
-                        <i class="fa-regular fa-user"></i>
-                        <span class="sidePopupItemText">User</span>
-                    </div>
-                </div>
-
             </div>
-
         </div>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="./assets/js/main.js"></script>

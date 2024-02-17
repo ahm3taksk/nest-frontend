@@ -1,7 +1,7 @@
 .sidePopup {
     position: fixed;
     top: 30%;
-    right: 0;
+    right: 40px;
     width: 40px;
     height: 100px;
     z-index: 9999;
@@ -11,32 +11,85 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
     color: var(--text-light);
     cursor: pointer;
     background-color: var(--primary-color);
+    transform: rotate(90deg);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .sidePopupTogglerContent {
-    transform: rotate(90deg);
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .sidePopupContent {
     display: none;
-    position: fixed;
-    top: 30%;
-    right: 90px;
-    width: 0;
+    position: relative;
+    flex-wrap: wrap;
+    top: -80px;
+    right: 340px;
+    gap: 0 10px;
     border-radius: 10px;
-    padding: 5px;
-    gap: 5px;
+    padding: 15px;
     background-color: var(--text-light);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 4px var(--primary-color) solid;
+    -webkit-box-shadow: 0px 0px 60px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 60px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 60px -19px rgba(0,0,0,0.75);
+}
+
+.sidePopupContent:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: solid 23px transparent;
+    border-top: solid 23px transparent;
+    border-left: solid 23px var(--primary-color);
+    border-right: solid 23px transparent;
+    top: 10;
+    right: -48px;
 }
 
 .sidePopupContent.active {
-    width: 200px;
+    display: flex;
+    width: 340px;
+    height: 230px;
+}
+
+.sidePopupContentHeader {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.sidePopupTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sidePopupContentHeader i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidePopupWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    gap: 10px;
 }
 
 .sidePopupItem {
@@ -44,8 +97,10 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    width: 48%;
+    height: 50px;
     gap: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--text-dark);
     border: 1px solid var(--bg-grey);
@@ -55,7 +110,7 @@
 }
 
 .sidePopupItem i {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sidePopupItem:hover {
