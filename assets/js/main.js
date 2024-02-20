@@ -16,3 +16,7 @@ function activateSidePopup() {
         popupContent.classList.add("active");
   }
 }
+
+
+
+

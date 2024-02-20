@@ -19,62 +19,152 @@
                     </div>
                     <div class="navbarMiddle">
                         <div class="navbarSearch">
-                            <select class="navbarSearchSelect">
-                                <option >All Categories</option>
-                                <option>Milks and Dairies</option>
-                                <option>Wines &amp; Alcohol</option>
-                                <option>Clothing &amp; Beauty</option>
-                                <option>Pet Foods &amp; Toy</option>
-                                <option>Fast food</option>
-                                <option>Baking material</option>
-                                <option>Vegetables</option>
-                                <option>Fresh Seafood</option>
-                                <option>Noodles &amp; Rice</option>
-                                <option>Ice cream</option>
-                            </select>
+                            <div class="navbarSearchSelect">
+                                <div class="navbarSearchSelectButton">
+                                    All categories
+                                    <i class="fa-regular fas fa-chevron-down"></i>
+                                    <span class="navbarSearchSelectGap"></span>
+                                </div>
+                                <div class="selectContent">
+                                    <input type="text" class="selectInput">
+                                    <ul class="selectList">
+                                        <li class="selectItem">All Categories</li>
+                                        <li class="selectItem">Milks and Dairies</li>
+                                        <li class="selectItem">Wines &amp; Alcohol</li>
+                                        <li class="selectItem">Clothing &amp; Beauty</li>
+                                        <li class="selectItem">Pet Foods &amp; Toy</li>
+                                        <li class="selectItem">Fast food</li>
+                                        <li class="selectItem">Baking material</li>
+                                        <li class="selectItem">Vegetables</li>
+                                        <li class="selectItem">Fresh Seafood</li>
+                                        <li class="selectItem">Noodles &amp; Rice</li>
+                                        <li class="selectItem">Ice cream</li>
+                                    </ul>
+                                </div>
+                            </div>
                             <input type="text" class="navbarSearchInput" placeholder="Search for products">
                             <button class="navbarSearchButton">
-                                <img src="./assets/images/theme/icons/search.png" alt="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </div>
                         <div class="navbarLocationButton">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span class="navbarLocationText">Location</span>
+                            <span class="navbarLocationText">Your Location</span>
+                            <i class="fa-regular fas fas fa-chevron-down"></i>
+                            <div class="selectContent">
+                                <input type="text" class="selectInput">
+                                <ul class="selectList">
+                                    <li class="selectItem">Your Location</li>
+                                    <li class="selectItem">Alabama</li>
+                                    <li class="selectItem">Alaska</li>
+                                    <li class="selectItem">Arizona</li>
+                                    <li class="selectItem">Delaware</li>
+                                    <li class="selectItem">Florida</li>
+                                    <li class="selectItem">Georgia</li>
+                                    <li class="selectItem">Hawaii</li>
+                                    <li class="selectItem">Indiana</li>
+                                    <li class="selectItem">Maryland</li>
+                                    <li class="selectItem">Nevada</li>
+                                    <li class="selectItem">New Jersey</li>
+                                    <li class="selectItem">New Mexico</li>
+                                    <li class="selectItem">New York</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="navbarRight">
                         <div class="navbarRightItem">
-                            <div class="navbarRightItemBadge">
+                            <div class="navbarRightItemBadgeCompare">
                                 3
                             </div>
                             <div class="navbarRightItemContent">
                                 <img src="assets/images/theme/icons/icon-compare.svg" alt="Compare">
-                                <span class="navbarCompareText">Compare</span>
+                                <span class="navbarRightItemText">Compare</span>
                             </div>
                         </div>
                         <div class="navbarRightItem">
-                            <div class="navbarRightItemBadge">
+                            <div class="navbarRightItemBadgeWishlist">
                                 3
                             </div>
                             <div class="navbarRightItemContent">
                                 <img src="assets/images/theme/icons/icon-heart.svg" alt="Wishlist">
-                                <span class="navbarWishlistText">Wishlist</span>
+                                <span class="navbarRightItemText">Wishlist</span>
                             </div>
                         </div>
-                        <div class="navbarRightItem">
-                            <div class="navbarRightItemBadge">
+                        <div class="navbarRightItem cartDropdown">
+                            <div class="navbarRightItemBadgeCart">
                                 3
                             </div>
                             <div class="navbarRightItemContent">
                                 <img src="assets/images/theme/icons/icon-cart.svg" alt="Cart">
-                                <span class="navbarCartText">Cart</span>
+                                <span class="navbarRightItemText">Cart</span>
+                            </div>
+                            <div class="cartDropdownContent">
+                                <div class="cartDropdownProduct">
+                                    <div class="cartDropdownProductImage">
+                                        <img src="assets/images/shop/product-1-1.jpg" alt="Product">
+                                    </div>
+                                    <div class="cartDropdownProductInfo">
+                                        <div class="cartDropdownProductHead">
+                                            <h3 class="cartDropdownProductName">Product Name</h3>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <span class="cartDropdownProductPrice">2 x $10.00</span>
+                                    </div>
+                                </div>
+                                <div class="cartDropdownProduct">
+                                    <div class="cartDropdownProductImage">
+                                        <img src="assets/images/shop/product-2-1.jpg" alt="Product">
+                                    </div>
+                                    <div class="cartDropdownProductInfo">
+                                        <div class="cartDropdownProductHead">
+                                            <h3 class="cartDropdownProductName">Product Name</h3>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <span class="cartDropdownProductPrice">2 x $10.00</span>
+                                    </div>
+                                </div>
+                                <hr class="cartDropdownHr">
+                                <div class="cartDropdownTotal">
+                                    <span class="cartDropdownTotalText">Total</span>
+                                    <span class="cartDropdownTotalPrice">$210.00</span>
+                                </div>
+                                <div class="cartDropdownButtons">
+                                    <a href="cart.html" class="buttonSecondaryOutline cartDropdownButton">View Cart</a>
+                                    <a href="checkout.html" class="buttonPrimary cartDropdownButton">Checkout</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="navbarRightItem">
+                        <div class="navbarRightItem userDropdownButton">
                             <div class="navbarRightItemContent">
                                 <img src="assets/images/theme/icons/icon-user.svg" alt="User">
-                                <span class="navbarUserText">User</span>
-                                
+                                <span class="navbarRightItemText">User</span>
+                            </div>
+                            <div class="userDropdownContent">
+                                <div class="userDropdownContentItem">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                    <a href="login.html" class="userDropdownContentLink">Login</a>
+                                </div>
+                                <div class="userDropdownContentItem">
+                                    <i class="fa-regular fa-user"></i>
+                                    <a href="register.html" class="userDropdownContentLink">Register</a>
+                                </div>
+                                <div class="userDropdownContentItem">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <a href="account.html" class="userDropdownContentLink">Logout</a>
+                                </div>
+                                <div class="userDropdownContentItem">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <a href="login.html" class="userDropdownContentLink">Wishlist</a>
+                                </div>
+                                <div class="userDropdownContentItem">
+                                    <i class="fa-solid fa-sliders"></i>
+                                    <a href="register.html" class="userDropdownContentLink">Settings</a>
+                                </div>
+                                <div class="userDropdownContentItem">
+                                    <i class="fa-regular fa-user"></i>
+                                    <a href="account.html" class="userDropdownContentLink">Account</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,6 +208,18 @@
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $(".navbarSearchSelectButton").click(function() {
+                    $(".selectContent").eq(0).toggleClass("active");
+                });
+                $(".navbarLocationButton").click(function() {
+                    $(".selectContent").eq(1).toggleClass("active");
+                });
+            });
+        </script>
+        
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="./assets/js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
