@@ -17,6 +17,21 @@ function activateSidePopup() {
   }
 }
 
+const swiper = new Swiper('.swiperMain', {
+  direction: 'horizontal',
+  loop: true,
+  noSwiping: true,
+  allowTouchMove: false,
+  freeMode: false,
+  effect: 'fade',
 
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
+});
