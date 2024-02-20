@@ -1,0 +1,47 @@
+.popularProductCardBadgeHot {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px 20px;
+    background-color: var(--bg-purple);
+    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px 0 25px 0;
+}
+
+.popularProductCardBadgeNew {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px 0 25px 0;
+}
+
+.popularProductCardBadgeSale {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px 20px;
+    background-color: var(--bg-blue);
+    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px 0 25px 0;
+}
+
+.popularProductCardBadgeDiscount {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px 20px;
+    background-color: var(--bg-orange);
+    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px 0 25px 0;
+}
