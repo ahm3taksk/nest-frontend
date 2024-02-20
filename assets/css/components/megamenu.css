@@ -1,0 +1,128 @@
+.megamenu:hover .megaMenuContent  {
+    display: flex;
+}
+
+.megaMenuContent {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 10px;
+    width: 1590px;
+    top: 50px;
+    left: -460px;
+    margin: 0 auto;
+    padding: 10px ;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.megamenuColumn {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+
+.megamenuColumn h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.megamenuColumn h3:hover {
+    color: var(--secondary-color);
+}
+
+.megamenuColumn ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.megamenuColumn ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #918888;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.megamenuColumnBanner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.megaMenuBanner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    width: 60%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.megaMenuBanner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.megamenuBannerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 30px;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    z-index: 999;
+}
+
+.megamenuBannerTitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.megamenuBannerSubtitle {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.megamenuBannerDiscount {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.megamenuBannerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    color: var(--text-light);
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.megamenuBannerButton:hover {
+    background-color: var(--third-color);
+}
