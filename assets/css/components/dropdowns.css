@@ -120,6 +120,7 @@
     display: none;
     position: absolute;
     top: 20px;
+    right: 0;
     background-color: #f9f9f9;
     width: 180px;
     padding: 20px 10px;
