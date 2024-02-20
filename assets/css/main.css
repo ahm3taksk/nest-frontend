@@ -16,8 +16,8 @@
 @import url("./components/categoryDropdown.css");
 @import url("./components/sliderMain.css");
 @import url("./components/badges.css");
-@import url("./components/popularProductsSection.css");
 
 
 /* Pages */
 @import url("./pages/index.css");
+@import url("./pages/popularProductsSection.css");
