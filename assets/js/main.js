@@ -36,3 +36,36 @@ const swiper = new Swiper('.swiperMain', {
 
 });
 
+
+const swiperPopularProduct = new Swiper('.swiperPopularProduct', {
+  loop: true,
+  noSwiping: true,
+  allowTouchMove: false,
+  freeMode: false,
+  effect: 'fade',
+  slidesPerView: 1,
+  
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+const swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
+  loop: true,
+  spaceBetween: 0,
+  slidesPerView: 3,
+  freeMode: true,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+      swiper: swiper,
+  },
+});

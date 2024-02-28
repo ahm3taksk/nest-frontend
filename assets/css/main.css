@@ -16,6 +16,10 @@
 @import url("./components/categoryDropdown.css");
 @import url("./components/sliderMain.css");
 @import url("./components/badges.css");
+@import url("./components/popularProductModal.css");
+@import url("./components/dailyBestSell.css");
+@import url("./components/deals.css");
+@import url("./components/topRated.css");
 
 
 /* Pages */

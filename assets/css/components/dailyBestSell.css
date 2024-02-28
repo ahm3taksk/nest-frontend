@@ -1,0 +1,291 @@
+.dailyBestSellCard {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--bg-grey);
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dailyBestSellCardControls {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    background-color: var(--bg-light);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dailyBestSellCardAddWishlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dailyBestSellCardCompare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dailyBestSellCardAddCart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dailyBestSellCardAddWishlist:hover, .dailyBestSellCardCompare:hover, .dailyBestSellCardAddCart:hover {
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.dailyBestSellCardImage {
+    width: 200px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dailyBestSellCardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dailyBestSellCardImageFront {
+    visibility: visible;
+    position: absolute;
+}
+
+.dailyBestSellCardImageBack {
+    visibility: hidden;
+    position: absolute;
+}
+
+.dailyBestSellCard:hover .dailyBestSellCardControls{
+    display: flex;
+    transition: 0.3s;
+}
+
+.dailyBestSellCard:hover .dailyBestSellCardImageBack{
+    visibility: visible;
+}
+
+.dailyBestSellCard:hover .dailyBestSellCardImageFront{
+    visibility: hidden;
+}
+
+.dailyBestSellCardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    color: var(--text-dark);
+}
+
+.dailyBestSellCardCategory {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--bg-grey);
+}
+
+.dailyBestSellCardTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.dailyBestSellCardRating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    color: var(--bg-grey);
+}
+
+.dailyBestSellCardRatingStars {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dailyBestSellCardRatingStars i {
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.dailyBestSellCardPrice {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.dailyBestSellCardStock {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.dailyBestSellCardStockProgress {
+    width: 100%;
+    height: 6px;
+    position: relative;
+}
+
+.dailyBestSellCardStockText {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.dailyBestSellCardFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.dailyBestSellHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dailyBestSellTitle {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.dailyBestSellWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 20px 0;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--bg-grey);
+}
+
+.dailyBestSellBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-color: var(--bg-light);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dailyBestSellBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dailyBestSellBannerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 300px;
+    height: 400px;
+}
+
+.dailyBestSellBannerTitle {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--text-dark);
+}
+
+.dailyBestSellCardPriceOld {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bg-grey);
+    text-decoration: line-through;
+}
+
+.dailyBestSellCardPriceNew {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.dailyBestSellCardButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    width: 90px;
+    height: 40px;
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.dailyBestSellCardButton:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    transition: 0.3s;
+    transform: translateY(-5px);
+}
