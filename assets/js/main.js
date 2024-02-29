@@ -42,10 +42,6 @@ var swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
   spaceBetween: 0,
   slidesPerView: 3,
   freeMode: true,
-  navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-  },
 });
 
 var swiperPopularProduct = new Swiper('.swiperPopularProduct', {
@@ -62,9 +58,6 @@ var swiperPopularProduct = new Swiper('.swiperPopularProduct', {
     el: '.swiper-pagination',
   },
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+
 
 });
