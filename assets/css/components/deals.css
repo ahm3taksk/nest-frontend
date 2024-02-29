@@ -1,7 +1,3 @@
-.deals {
-    height: 610px;
-}
-
 .dealsHeader {
     display: flex;
     justify-content: space-between;
@@ -26,8 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 380px;
-    height: 400px;
+    height: 500px;
     border-radius: 15px;
     position: relative;
 }
