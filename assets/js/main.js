@@ -37,7 +37,7 @@ const swiper = new Swiper('.swiperMain', {
 });
 
 
-const swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
+var swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
   loop: true,
   spaceBetween: 0,
   slidesPerView: 3,
@@ -48,7 +48,7 @@ const swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
   },
 });
 
-const swiperPopularProduct = new Swiper('.swiperPopularProduct', {
+var swiperPopularProduct = new Swiper('.swiperPopularProduct', {
   loop: true,
   noSwiping: true,
   allowTouchMove: false,
