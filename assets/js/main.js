@@ -38,10 +38,11 @@ const swiper = new Swiper('.swiperMain', {
 
 
 var swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
-  loop: true,
-  spaceBetween: 0,
-  slidesPerView: 3,
-  freeMode: true,
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
 });
 
 var swiperPopularProduct = new Swiper('.swiperPopularProduct', {
