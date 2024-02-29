@@ -46,19 +46,14 @@ var swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
 });
 
 var swiperPopularProduct = new Swiper('.swiperPopularProduct', {
-  loop: true,
-  noSwiping: true,
-  allowTouchMove: false,
-  freeMode: false,
-  effect: 'fade',
-  slidesPerView: 1,
+    loop: true,
+    spaceBetween: 10,
+    freeMode: false,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     thumbs: {
       swiper: swiperPopularProductThumb,
   },
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-
-
 });
