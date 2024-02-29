@@ -37,6 +37,17 @@ const swiper = new Swiper('.swiperMain', {
 });
 
 
+const swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
+  loop: true,
+  spaceBetween: 0,
+  slidesPerView: 3,
+  freeMode: true,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+});
+
 const swiperPopularProduct = new Swiper('.swiperPopularProduct', {
   loop: true,
   noSwiping: true,
@@ -56,15 +67,4 @@ const swiperPopularProduct = new Swiper('.swiperPopularProduct', {
     prevEl: '.swiper-button-prev',
   },
 
-});
-
-const swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
-  loop: true,
-  spaceBetween: 0,
-  slidesPerView: 3,
-  freeMode: true,
-  navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-  },
 });
