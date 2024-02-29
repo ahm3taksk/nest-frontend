@@ -39,7 +39,7 @@ const swiper = new Swiper('.swiperMain', {
 
 var swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
     spaceBetween: 10,
-    slidesPerView: 3,
+    slidesPerView: 4,
     noSwiping: true,
     allowTouchMove: false,
     freeMode: false,
