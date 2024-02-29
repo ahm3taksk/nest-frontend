@@ -40,7 +40,9 @@ const swiper = new Swiper('.swiperMain', {
 var swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
     spaceBetween: 10,
     slidesPerView: 3,
-    freeMode: true,
+    noSwiping: true,
+    allowTouchMove: false,
+    freeMode: false,
     watchSlidesProgress: true,
 });
 
