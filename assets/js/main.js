@@ -44,7 +44,9 @@ const swiperPopularProduct = new Swiper('.swiperPopularProduct', {
   freeMode: false,
   effect: 'fade',
   slidesPerView: 1,
-  
+    thumbs: {
+      swiper: swiperPopularProductThumb,
+  },
   pagination: {
     el: '.swiper-pagination',
   },
@@ -64,8 +66,5 @@ const swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
   navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-      swiper: swiper,
   },
 });
