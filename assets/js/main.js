@@ -36,6 +36,25 @@ const swiper = new Swiper('.swiperMain', {
 
 });
 
+const swiperDailyBestSell = new Swiper('.swiperDailyBestSell', {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  freeMode: false,
+  pagination: {
+    clickable: true,
+  },
+  breakpoints: {
+    1920: {
+      slidesPerView: 4,
+      spaceBetween: 2
+    },
+    402: {
+      slidesPerView: 1,
+      spaceBetween: 2
+    },
+  }
+});
+
 
 var swiperPopularProductThumb = new Swiper('.swiperPopularProductThumb', {
     spaceBetween: 10,
