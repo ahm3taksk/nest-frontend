@@ -17,12 +17,17 @@
 @import url("./components/sliderMain.css");
 @import url("./components/badges.css");
 @import url("./components/popularProductModal.css");
-@import url("./sections/dailyBestSell.css");
-@import url("./sections/deals.css");
-@import url("./sections/topRated.css");
-@import url("./sections/shopByCategory.css");
 
 
 /* Pages */
 @import url("./pages/index.css");
 @import url("./pages/popularProductsSection.css");
+
+/* Sections */
+@import url("./sections/dailyBestSell.css");
+@import url("./sections/deals.css");
+@import url("./sections/topRated.css");
+@import url("./sections/shopByCategory.css");
+
+/* Mobile */
+@import url("./mobile/mobileMain.css");

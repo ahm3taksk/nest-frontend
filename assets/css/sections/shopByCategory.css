@@ -9,13 +9,17 @@
 .shopByCategorySliderNav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 150px;
+    justify-content: center;
+    width: 110px;
     height: 40px;
     gap: 10px;
+    position: relative;
 }
 
-.shopByCategorySliderPrev, .shopByCategorySliderNext {}
+.shopByCategorySliderPrev, .shopByCategorySliderNext {
+    width: 40px !important;
+    height: 40px !important;
+}
 
 .shopByCategoryTitle {
     font-size: 36px;
