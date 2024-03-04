@@ -17,9 +17,10 @@
 @import url("./components/sliderMain.css");
 @import url("./components/badges.css");
 @import url("./components/popularProductModal.css");
-@import url("./components/dailyBestSell.css");
-@import url("./components/deals.css");
-@import url("./components/topRated.css");
+@import url("./sections/dailyBestSell.css");
+@import url("./sections/deals.css");
+@import url("./sections/topRated.css");
+@import url("./sections/shopByCategory.css");
 
 
 /* Pages */

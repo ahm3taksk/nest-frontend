@@ -1,0 +1,73 @@
+.shopByCategoryHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.shopByCategorySliderNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+    gap: 10px;
+}
+
+.shopByCategorySliderPrev, .shopByCategorySliderNext {}
+
+.shopByCategoryTitle {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.swiperShopByCategory {
+    height: 220px !important;
+    margin-top: 20px;
+}
+
+.swiperShopByCategory .swiper-wrapper {
+    gap: 20px;
+}
+    
+.slideShopByCategory {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 180px !important;
+    height: 100% !important;
+}
+
+.shopByCategoryCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-light-grey);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.shopByCategoryCardImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.shopByCategoryCardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shopByCategoryCardTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+}

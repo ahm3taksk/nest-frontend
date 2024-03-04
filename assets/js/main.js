@@ -43,6 +43,10 @@ const swiperDailyBestSell = new Swiper('.swiperDailyBestSell', {
   pagination: {
     clickable: true,
   },
+  navigation: {
+    nextEl: '.swiperDailyBestSellNext',
+    prevEl: '.swiperDailyBestSellPrev',
+  },
   breakpoints: {
     1920: {
       slidesPerView: 4,
@@ -75,4 +79,26 @@ var swiperPopularProduct = new Swiper('.swiperPopularProduct', {
     thumbs: {
       swiper: swiperPopularProductThumb,
   },
+});
+
+
+const swiperShopByCategory = new Swiper('.swiperShopByCategory', {
+  slidesPerView: 8,
+  spaceBetween: 10,
+  effect: 'slide',
+  freeMode: true,
+  navigation: {
+    nextEl: '.shopByCategorySliderNext',
+    prevEl: '.shopByCategorySliderPrev',
+  },
+  breakpoints: {
+    1920: {
+      slidesPerView: 8,
+      spaceBetween: 2
+    },
+    402: {
+      slidesPerView: 2,
+      spaceBetween: 2
+    },
+  }
 });
