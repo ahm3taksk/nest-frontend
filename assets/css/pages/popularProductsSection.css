@@ -1,7 +1,8 @@
 .popularProductsHeader {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     gap: 20px;
     margin-top: 50px;
@@ -16,8 +17,9 @@
 .popularProductsTabMenu {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .popularProductsTabItem {
