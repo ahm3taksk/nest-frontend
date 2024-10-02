@@ -2,6 +2,8 @@
     --primary-color: #3BB77E;
     --secondary-color: #FDC040;
     --third-color: #FD6E6E;
+    --text-darkblue: #253D4E;
+    --text-gray: #7E7E7E;
     --bg-dark: #1a1a1a;
     --primary-fade: #2b9161;
     --bg-light: #f9f9f9;
@@ -13,6 +15,13 @@
     --text-light: #fff;
     --bg-grey: #c9c7c7;
     --bg-light-grey: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
 }
 
 ::selection {

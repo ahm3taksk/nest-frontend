@@ -1,7 +1,7 @@
 .sidePopup {
     position: fixed;
     top: 30%;
-    right: 40px;
+    right: 50px;
     width: 40px;
     height: 100px;
     z-index: 9999;
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 140px;
     height: 40px;
     padding: 10px;
     color: var(--text-light);
@@ -20,9 +20,9 @@
     transform: rotate(90deg);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .sidePopupTogglerContent {

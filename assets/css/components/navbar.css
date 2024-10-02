@@ -83,6 +83,19 @@
     font-size: 20px;
 }
 
+.navbarLocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    width: 160px;
+    height: 35px;
+    color: var(--text-dark);
+    cursor: pointer;
+    border: 1px solid var(--bg-grey);
+}
+
 .navbarLocationButton {
     display: flex;
     align-items: center;

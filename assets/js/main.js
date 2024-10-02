@@ -8,14 +8,29 @@ tailwind.config = {
     }
   }
 
-function activateSidePopup() {
-  var popupContent = document.getElementsByClassName("sidePopupContent")[0];
+  function activateSidePopup(event) {
+    var popupContent = document.getElementsByClassName("sidePopupContent")[0];
+  
     if (popupContent.classList.contains("active")) {
-        popupContent.classList.remove("active");
+      popupContent.classList.remove("active");
+      document.removeEventListener("click", closePopupOnClickOutside);
     } else {
-        popupContent.classList.add("active");
+      popupContent.classList.add("active");
+      setTimeout(() => document.addEventListener("click", closePopupOnClickOutside));
+    }
+    event.stopPropagation();
   }
-}
+  
+  function closePopupOnClickOutside(event) {
+    var popupContent = document.getElementsByClassName("sidePopupContent")[0];
+    
+    if (!popupContent.contains(event.target)) {
+      popupContent.classList.remove("active");
+      document.removeEventListener("click", closePopupOnClickOutside);
+    }
+  }
+  
+
 
 const swiper = new Swiper('.swiperMain', {
   direction: 'horizontal',
