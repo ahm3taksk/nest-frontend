@@ -1,0 +1,131 @@
+.registerWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.registerTitle {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-darkblue);
+}
+
+.registerForm {
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--bg-grey);
+}
+
+.registerGroup {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.registerInput {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px solid var(--bg-light-grey);
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.registerInput:focus{
+    border: 2px solid var(--primary-color);
+}
+.registerInputPassword:focus {
+    border: 2px solid var(--primary-color);
+    border-right: none;
+}
+
+.registerInputPassword:focus + .registerInputPasswordIcon {
+    border: 2px solid var(--primary-color);
+    border-left: none;
+}
+
+.registerInputPassField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.registerInputPassword {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 2px solid var(--bg-light-grey);   
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.registerInputPasswordIcon {
+    padding: 18.5px;
+    border: 2px solid var(--bg-light-grey);
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--text-gray);
+}
+
+.registerInputPasswordIcon.active {
+
+    color: var(--primary-color);
+}
+
+.registerButtons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    gap: 10px;
+}
+
+.registerButton {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+}
+
+.registerRemember {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.registerRemember input {
+    width: 20px;
+    height: 20px;
+}
+
+.registerLink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.registerLink a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.registerLink a:hover {
+    color: var(--third-color);
+    transition: 0.3s;
+}
